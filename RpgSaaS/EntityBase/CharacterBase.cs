@@ -17,8 +17,8 @@ namespace EntityBase
         public int currentExp { get; set; }
         public int nextLevelExp { get; set; }
         public float difficultFactor { get; set; }
-        public Attributes attributes { get; set; }
-        public ArrayList<Item> equipedItems { get; set; }
+        public List<Item> equipedItems { get; set; }
+        public BasicAttributes basicAttributes { get; set; }
         public Inventory inventory { get; set; }
         public Race race { get; set; }
 
