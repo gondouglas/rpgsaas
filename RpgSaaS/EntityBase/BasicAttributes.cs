@@ -11,7 +11,6 @@
 
         public int meleeATK { get; set; }
         public int magicATK { get; set; }
-
         public int meleeDEF { get; set; }
         public int magicDEF { get; set; }
     }
