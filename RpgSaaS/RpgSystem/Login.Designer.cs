@@ -1,6 +1,6 @@
 ﻿namespace RpgSystem
 {
-    partial class Login
+    partial class frm_Login
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_login = new System.Windows.Forms.TextBox();
-            this.btn_cadastrar = new System.Windows.Forms.Button();
-            this.btn_entrar = new System.Windows.Forms.Button();
+            this.btn_create_account = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
@@ -61,30 +61,33 @@
             this.txt_login.Location = new System.Drawing.Point(70, 12);
             this.txt_login.Name = "txt_login";
             this.txt_login.Size = new System.Drawing.Size(202, 20);
-            this.txt_login.TabIndex = 3;
+            this.txt_login.TabIndex = 1;
             // 
-            // btn_cadastrar
+            // btn_create_account
             // 
-            this.btn_cadastrar.Location = new System.Drawing.Point(70, 64);
-            this.btn_cadastrar.Name = "btn_cadastrar";
-            this.btn_cadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cadastrar.TabIndex = 4;
-            this.btn_cadastrar.Text = "Cadastrar";
-            this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_create_account.Location = new System.Drawing.Point(70, 64);
+            this.btn_create_account.Name = "btn_create_account";
+            this.btn_create_account.Size = new System.Drawing.Size(91, 23);
+            this.btn_create_account.TabIndex = 3;
+            this.btn_create_account.Text = "Create account";
+            this.btn_create_account.UseVisualStyleBackColor = true;
+            this.btn_create_account.Click += new System.EventHandler(this.btn_create_account_Click);
             // 
-            // btn_entrar
+            // btn_login
             // 
-            this.btn_entrar.Location = new System.Drawing.Point(197, 64);
-            this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_entrar.TabIndex = 5;
-            this.btn_entrar.Text = "Entrar";
-            this.btn_entrar.UseVisualStyleBackColor = true;
+            this.btn_login.Location = new System.Drawing.Point(197, 64);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(75, 23);
+            this.btn_login.TabIndex = 4;
+            this.btn_login.Text = "Login";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // txt_password
             // 
             this.txt_password.Location = new System.Drawing.Point(70, 38);
             this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(202, 20);
             this.txt_password.TabIndex = 2;
             // 
@@ -93,20 +96,24 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // Login
+            // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 93);
-            this.Controls.Add(this.btn_entrar);
-            this.Controls.Add(this.btn_cadastrar);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.btn_create_account);
             this.Controls.Add(this.txt_login);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(300, 132);
+            this.MinimumSize = new System.Drawing.Size(300, 132);
+            this.Name = "frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Rpg System - Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,8 +124,8 @@
         private System.Windows.Forms.TextBox txt_login;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_cadastrar;
-        private System.Windows.Forms.Button btn_entrar;
+        private System.Windows.Forms.Button btn_create_account;
+        private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
