@@ -37,6 +37,7 @@
             this.btn_createProject = new System.Windows.Forms.Button();
             this.btn_enter = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +45,7 @@
             // pic_user
             // 
             this.pic_user.Image = ((System.Drawing.Image)(resources.GetObject("pic_user.Image")));
-            this.pic_user.Location = new System.Drawing.Point(45, 12);
+            this.pic_user.Location = new System.Drawing.Point(23, 12);
             this.pic_user.Name = "pic_user";
             this.pic_user.Size = new System.Drawing.Size(50, 50);
             this.pic_user.TabIndex = 0;
@@ -53,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 65);
+            this.label2.Location = new System.Drawing.Point(20, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
@@ -67,6 +68,8 @@
             "Project 2",
             "Project 3"});
             this.listBox1.Location = new System.Drawing.Point(12, 90);
+            this.listBox1.MaximumSize = new System.Drawing.Size(122, 251);
+            this.listBox1.MinimumSize = new System.Drawing.Size(122, 251);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(122, 251);
             this.listBox1.TabIndex = 3;
@@ -118,6 +121,15 @@
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(81, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Logout";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frm_projectSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,12 +137,15 @@
             this.ClientSize = new System.Drawing.Size(584, 414);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_enter);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_createProject);
             this.Controls.Add(this.lbl_nameProject);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pic_user);
+            this.MaximumSize = new System.Drawing.Size(600, 453);
+            this.MinimumSize = new System.Drawing.Size(600, 453);
             this.Name = "frm_projectSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rpg System";
@@ -152,5 +167,6 @@
         private System.Windows.Forms.Button btn_createProject;
         private System.Windows.Forms.Button btn_enter;
         private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button button1;
     }
 }
