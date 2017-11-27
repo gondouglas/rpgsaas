@@ -131,12 +131,13 @@
             this.btn_create.TabIndex = 6;
             this.btn_create.Text = "Create";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
             // frm_createUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 173);
+            this.ClientSize = new System.Drawing.Size(284, 174);
             this.Controls.Add(this.btn_create);
             this.Controls.Add(this.txt_lastname);
             this.Controls.Add(this.label3);

@@ -2,9 +2,9 @@
 {
     public class Loot : EntityBase
     {
-        public int amount { get; set; }
-        public ItemBase item { get; set; }
-        public double rate { get; set; }
+        public int Amount { get; set; }
+        public ItemBase Item { get; set; }
+        public double Rate { get; set; }
 
     }
 }

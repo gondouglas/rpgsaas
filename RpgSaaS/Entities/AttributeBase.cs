@@ -1,9 +1,10 @@
 ﻿namespace Entities
 {
+    
     public class AttributeBase : EntityBase
     {
-        public string name { get; set; }
-        public int value { get; set; }
+        public string Name { get; set; }
+        public int Value { get; set; }
 
     }
 }

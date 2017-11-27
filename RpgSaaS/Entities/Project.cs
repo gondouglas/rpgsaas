@@ -8,12 +8,27 @@ namespace Entities
 {
     public class Project : EntityBase
     {
-        public string name { get; set; }
-        public string description { get; set; }
-        public DateTime creationDate { get; set; }
-        public List<CharacterBase> characters { get; set; }
-        public List<ItemBase> items { get; set; }
-        public List<Group> groups { get; set; }
-        public List<AttributeBase> attributes { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime CreationDate { get; set; }
+        public List<CharacterBase> Characters { get; set; }
+        public List<ItemBase> Items { get; set; }
+        public List<Group> Groups { get; set; }
+        public List<TypeItem> TypeItems { get; set; }
+        public List<AttributeBase> Attributes { get; set; }
+
+        public Project()
+        {
+            CreationDate = DateTime.Now;
+            Characters = new List<CharacterBase>();
+            Items = new List<ItemBase>();
+            Groups = new List<Group>();
+            Attributes = new List<AttributeBase>();
+            TypeItems = new List<TypeItem>();
+        }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

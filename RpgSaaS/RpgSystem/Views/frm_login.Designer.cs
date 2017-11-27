@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 93);
+            this.ClientSize = new System.Drawing.Size(284, 94);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.btn_create_account);
             this.Controls.Add(this.txt_login);
@@ -113,7 +113,9 @@
             this.Name = "frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rpg System - Login";
+            this.Activated += new System.EventHandler(this.frm_Login_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Login_FormClosing);
+            this.Load += new System.EventHandler(this.frm_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

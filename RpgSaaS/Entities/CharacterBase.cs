@@ -8,16 +8,23 @@ namespace Entities
 {
     public class CharacterBase : EntityBase
     {
-        public string name { get; set; }
-        public int maxHp { get; set; }
-        public int maxMp { get; set; }
-        public int maxSp { get; set; }
-        public float currentHp { get; set; }
-        public float currentMp { get; set; }
-        public float currentSp { get; set; }
-        public List<AttributeBase> attributes { get; set; }
-        public List<ItemBase> itemsUsed { get; set; }
-        public List<Resistance> resistances { get; set; }
+        public string Name { get; set; }
+        public int MaxHp { get; set; }
+        public int MaxMp { get; set; }
+        public int MaxSp { get; set; }
+        public float CurrentHp { get; set; }
+        public float CurrentMp { get; set; }
+        public float CurrentSp { get; set; }
+        public List<AttributeBase> Attributes { get; set; }
+        public List<ItemBase> ItemsUsed { get; set; }
+        public List<Resistance> Resistances { get; set; }
+
+        public CharacterBase()
+        {
+            Attributes = new List<AttributeBase>();
+            ItemsUsed = new List<ItemBase>();
+            Resistances = new List<Resistance>();
+        }
 
     }
 }

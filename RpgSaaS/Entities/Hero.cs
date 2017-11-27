@@ -8,8 +8,13 @@ namespace Entities
 {
     public class Hero : CharacterBase
     {
-        public Level level { get; set; }
-        public Inventory inventory { get; set; }
+        public Level Level { get; set; }
+        public Inventory Inventory { get; set; }
 
+        public Hero()
+        {
+            Level = new Level();
+            Inventory = new Inventory();
+        }
     }
 }

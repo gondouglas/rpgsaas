@@ -8,8 +8,13 @@ namespace Entities
 {
     public class Enemy : CharacterBase
     {
-        public int dropExp { get; set; }
-        public int dropMoney { get; set; }
-        public List<Loot> loot { get; set; }
+        public int DropExp { get; set; }
+        public int DropMoney { get; set; }
+        public List<Loot> Loot { get; set; }
+
+        public Enemy()
+        {
+            Loot = new List<Loot>();
+        }
     }
 }

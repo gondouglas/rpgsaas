@@ -8,6 +8,11 @@ namespace Entities
 {
     public class Group : EntityBase
     {
-        public List<Enemy> enemies { get; set; }
+        public List<Enemy> Enemies { get; set; }
+
+        public Group()
+        {
+            Enemies = new List<Enemy>();
+        }
     }
 }

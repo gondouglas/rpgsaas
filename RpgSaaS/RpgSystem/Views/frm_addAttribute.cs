@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RpgSystem
 {
-    public partial class frm_createUser : Form
+    public partial class frm_addAttribute : Form
     {
-        public frm_createUser()
+        public frm_addAttribute()
         {
             InitializeComponent();
         }
