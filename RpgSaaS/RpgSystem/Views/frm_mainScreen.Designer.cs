@@ -185,18 +185,18 @@
             this.button9 = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.txt_base = new System.Windows.Forms.TextBox();
+            this.lbl_lvl100 = new System.Windows.Forms.Label();
+            this.lbl_lvl50 = new System.Windows.Forms.Label();
+            this.lbl_lvl10 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_lvl1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_level = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -217,11 +217,11 @@
             this.list_itemsUsed = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_sp = new System.Windows.Forms.TextBox();
             this.lbl_spCharacter = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_mp = new System.Windows.Forms.TextBox();
             this.lbl_mpCharacter = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_hp = new System.Windows.Forms.TextBox();
             this.lbl_hpCharacter = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_name = new System.Windows.Forms.TextBox();
@@ -377,7 +377,7 @@
             this.tab_groups.Location = new System.Drawing.Point(4, 22);
             this.tab_groups.Name = "tab_groups";
             this.tab_groups.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_groups.Size = new System.Drawing.Size(601, 407);
+            this.tab_groups.Size = new System.Drawing.Size(601, 408);
             this.tab_groups.TabIndex = 3;
             this.tab_groups.Text = "Groups";
             this.tab_groups.UseVisualStyleBackColor = true;
@@ -402,7 +402,7 @@
             this.splitContainer13.Panel2.Controls.Add(this.groupBox28);
             this.splitContainer13.Panel2.Controls.Add(this.groupBox29);
             this.splitContainer13.Panel2.Controls.Add(this.groupBox30);
-            this.splitContainer13.Size = new System.Drawing.Size(595, 401);
+            this.splitContainer13.Size = new System.Drawing.Size(595, 402);
             this.splitContainer13.SplitterDistance = 151;
             this.splitContainer13.TabIndex = 1;
             // 
@@ -420,7 +420,7 @@
             // splitContainer14.Panel2
             // 
             this.splitContainer14.Panel2.Controls.Add(this.splitContainer15);
-            this.splitContainer14.Size = new System.Drawing.Size(151, 401);
+            this.splitContainer14.Size = new System.Drawing.Size(151, 402);
             this.splitContainer14.SplitterDistance = 44;
             this.splitContainer14.TabIndex = 0;
             // 
@@ -449,7 +449,7 @@
             // 
             this.splitContainer15.Panel2.Controls.Add(this.button38);
             this.splitContainer15.Panel2.Controls.Add(this.button39);
-            this.splitContainer15.Size = new System.Drawing.Size(151, 353);
+            this.splitContainer15.Size = new System.Drawing.Size(151, 354);
             this.splitContainer15.SplitterDistance = 312;
             this.splitContainer15.TabIndex = 0;
             // 
@@ -957,7 +957,7 @@
             this.tab_enemies.Location = new System.Drawing.Point(4, 22);
             this.tab_enemies.Name = "tab_enemies";
             this.tab_enemies.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_enemies.Size = new System.Drawing.Size(601, 407);
+            this.tab_enemies.Size = new System.Drawing.Size(601, 408);
             this.tab_enemies.TabIndex = 2;
             this.tab_enemies.Text = "Enemies";
             this.tab_enemies.UseVisualStyleBackColor = true;
@@ -982,7 +982,7 @@
             this.splitContainer4.Panel2.Controls.Add(this.groupBox7);
             this.splitContainer4.Panel2.Controls.Add(this.groupBox8);
             this.splitContainer4.Panel2.Controls.Add(this.groupBox9);
-            this.splitContainer4.Size = new System.Drawing.Size(595, 401);
+            this.splitContainer4.Size = new System.Drawing.Size(595, 402);
             this.splitContainer4.SplitterDistance = 151;
             this.splitContainer4.TabIndex = 1;
             // 
@@ -1000,7 +1000,7 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer5.Size = new System.Drawing.Size(151, 401);
+            this.splitContainer5.Size = new System.Drawing.Size(151, 402);
             this.splitContainer5.SplitterDistance = 44;
             this.splitContainer5.TabIndex = 0;
             // 
@@ -1029,7 +1029,7 @@
             // 
             this.splitContainer6.Panel2.Controls.Add(this.btn_removeEnemy);
             this.splitContainer6.Panel2.Controls.Add(this.btn_addEnemy);
-            this.splitContainer6.Size = new System.Drawing.Size(151, 353);
+            this.splitContainer6.Size = new System.Drawing.Size(151, 354);
             this.splitContainer6.SplitterDistance = 312;
             this.splitContainer6.TabIndex = 0;
             // 
@@ -1395,7 +1395,7 @@
             this.tab_item.Location = new System.Drawing.Point(4, 22);
             this.tab_item.Name = "tab_item";
             this.tab_item.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_item.Size = new System.Drawing.Size(601, 407);
+            this.tab_item.Size = new System.Drawing.Size(601, 408);
             this.tab_item.TabIndex = 1;
             this.tab_item.Text = "Items";
             this.tab_item.UseVisualStyleBackColor = true;
@@ -1418,7 +1418,7 @@
             this.splitContainer7.Panel2.Controls.Add(this.groupBox15);
             this.splitContainer7.Panel2.Controls.Add(this.groupBox16);
             this.splitContainer7.Panel2.Controls.Add(this.groupBox18);
-            this.splitContainer7.Size = new System.Drawing.Size(595, 401);
+            this.splitContainer7.Size = new System.Drawing.Size(595, 402);
             this.splitContainer7.SplitterDistance = 151;
             this.splitContainer7.TabIndex = 1;
             // 
@@ -1436,7 +1436,7 @@
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.splitContainer9);
-            this.splitContainer8.Size = new System.Drawing.Size(151, 401);
+            this.splitContainer8.Size = new System.Drawing.Size(151, 402);
             this.splitContainer8.SplitterDistance = 44;
             this.splitContainer8.TabIndex = 0;
             // 
@@ -1465,7 +1465,7 @@
             // 
             this.splitContainer9.Panel2.Controls.Add(this.button10);
             this.splitContainer9.Panel2.Controls.Add(this.button11);
-            this.splitContainer9.Size = new System.Drawing.Size(151, 353);
+            this.splitContainer9.Size = new System.Drawing.Size(151, 354);
             this.splitContainer9.SplitterDistance = 312;
             this.splitContainer9.TabIndex = 0;
             // 
@@ -1865,6 +1865,7 @@
             this.list_characters.Name = "list_characters";
             this.list_characters.Size = new System.Drawing.Size(151, 303);
             this.list_characters.TabIndex = 0;
+            this.list_characters.SelectedIndexChanged += new System.EventHandler(this.list_characters_SelectedIndexChanged);
             // 
             // button9
             // 
@@ -1883,21 +1884,22 @@
             this.btn_add.TabIndex = 0;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.textBox12);
-            this.groupBox11.Controls.Add(this.label19);
-            this.groupBox11.Controls.Add(this.label17);
-            this.groupBox11.Controls.Add(this.label15);
+            this.groupBox11.Controls.Add(this.txt_base);
+            this.groupBox11.Controls.Add(this.lbl_lvl100);
+            this.groupBox11.Controls.Add(this.lbl_lvl50);
+            this.groupBox11.Controls.Add(this.lbl_lvl10);
             this.groupBox11.Controls.Add(this.label18);
             this.groupBox11.Controls.Add(this.label16);
-            this.groupBox11.Controls.Add(this.label12);
+            this.groupBox11.Controls.Add(this.lbl_lvl1);
             this.groupBox11.Controls.Add(this.label14);
             this.groupBox11.Controls.Add(this.label13);
             this.groupBox11.Controls.Add(this.label11);
             this.groupBox11.Controls.Add(this.label2);
-            this.groupBox11.Controls.Add(this.textBox11);
+            this.groupBox11.Controls.Add(this.txt_level);
             this.groupBox11.Controls.Add(this.label10);
             this.groupBox11.Location = new System.Drawing.Point(2, 88);
             this.groupBox11.Name = "groupBox11";
@@ -1906,45 +1908,46 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Level Stats";
             // 
-            // textBox12
+            // txt_base
             // 
-            this.textBox12.Location = new System.Drawing.Point(41, 47);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(30, 20);
-            this.textBox12.TabIndex = 1;
+            this.txt_base.Location = new System.Drawing.Point(41, 47);
+            this.txt_base.Name = "txt_base";
+            this.txt_base.Size = new System.Drawing.Size(30, 20);
+            this.txt_base.TabIndex = 1;
+            this.txt_base.TextChanged += new System.EventHandler(this.txt_base_TextChanged);
             // 
-            // label19
+            // lbl_lvl100
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(173, 54);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(25, 9);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "99999";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_lvl100.AutoSize = true;
+            this.lbl_lvl100.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lvl100.Location = new System.Drawing.Point(173, 54);
+            this.lbl_lvl100.Name = "lbl_lvl100";
+            this.lbl_lvl100.Size = new System.Drawing.Size(25, 9);
+            this.lbl_lvl100.TabIndex = 0;
+            this.lbl_lvl100.Text = "99999";
+            this.lbl_lvl100.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label17
+            // lbl_lvl50
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(173, 45);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(21, 9);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "9999";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_lvl50.AutoSize = true;
+            this.lbl_lvl50.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lvl50.Location = new System.Drawing.Point(173, 45);
+            this.lbl_lvl50.Name = "lbl_lvl50";
+            this.lbl_lvl50.Size = new System.Drawing.Size(21, 9);
+            this.lbl_lvl50.TabIndex = 0;
+            this.lbl_lvl50.Text = "9999";
+            this.lbl_lvl50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label15
+            // lbl_lvl10
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(173, 36);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 9);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "999";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_lvl10.AutoSize = true;
+            this.lbl_lvl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lvl10.Location = new System.Drawing.Point(173, 36);
+            this.lbl_lvl10.Name = "lbl_lvl10";
+            this.lbl_lvl10.Size = new System.Drawing.Size(17, 9);
+            this.lbl_lvl10.TabIndex = 0;
+            this.lbl_lvl10.Text = "999";
+            this.lbl_lvl10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label18
             // 
@@ -1966,16 +1969,16 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Level   50:";
             // 
-            // label12
+            // lbl_lvl1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(173, 27);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(13, 9);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "99";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_lvl1.AutoSize = true;
+            this.lbl_lvl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lvl1.Location = new System.Drawing.Point(173, 27);
+            this.lbl_lvl1.Name = "lbl_lvl1";
+            this.lbl_lvl1.Size = new System.Drawing.Size(13, 9);
+            this.lbl_lvl1.TabIndex = 0;
+            this.lbl_lvl1.Text = "99";
+            this.lbl_lvl1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label14
             // 
@@ -2016,12 +2019,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Level";
             // 
-            // textBox11
+            // txt_level
             // 
-            this.textBox11.Location = new System.Drawing.Point(41, 21);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(30, 20);
-            this.textBox11.TabIndex = 1;
+            this.txt_level.Location = new System.Drawing.Point(41, 21);
+            this.txt_level.Name = "txt_level";
+            this.txt_level.Size = new System.Drawing.Size(30, 20);
+            this.txt_level.TabIndex = 1;
+            this.txt_level.TextChanged += new System.EventHandler(this.txt_level_TextChanged);
             // 
             // label10
             // 
@@ -2205,11 +2209,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_sp);
             this.groupBox1.Controls.Add(this.lbl_spCharacter);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txt_mp);
             this.groupBox1.Controls.Add(this.lbl_mpCharacter);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_hp);
             this.groupBox1.Controls.Add(this.lbl_hpCharacter);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
@@ -2219,12 +2223,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Basic Stats";
             // 
-            // textBox3
+            // txt_sp
             // 
-            this.textBox3.Location = new System.Drawing.Point(159, 52);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(30, 20);
-            this.textBox3.TabIndex = 1;
+            this.txt_sp.Location = new System.Drawing.Point(159, 52);
+            this.txt_sp.Name = "txt_sp";
+            this.txt_sp.Size = new System.Drawing.Size(30, 20);
+            this.txt_sp.TabIndex = 1;
+            this.txt_sp.TextChanged += new System.EventHandler(this.txt_sp_TextChanged);
             // 
             // lbl_spCharacter
             // 
@@ -2235,12 +2240,13 @@
             this.lbl_spCharacter.TabIndex = 0;
             this.lbl_spCharacter.Text = "SP";
             // 
-            // textBox2
+            // txt_mp
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(30, 20);
-            this.textBox2.TabIndex = 1;
+            this.txt_mp.Location = new System.Drawing.Point(96, 52);
+            this.txt_mp.Name = "txt_mp";
+            this.txt_mp.Size = new System.Drawing.Size(30, 20);
+            this.txt_mp.TabIndex = 1;
+            this.txt_mp.TextChanged += new System.EventHandler(this.txt_mp_TextChanged);
             // 
             // lbl_mpCharacter
             // 
@@ -2251,12 +2257,13 @@
             this.lbl_mpCharacter.TabIndex = 0;
             this.lbl_mpCharacter.Text = "MP";
             // 
-            // textBox1
+            // txt_hp
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(30, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_hp.Location = new System.Drawing.Point(36, 52);
+            this.txt_hp.Name = "txt_hp";
+            this.txt_hp.Size = new System.Drawing.Size(30, 20);
+            this.txt_hp.TabIndex = 1;
+            this.txt_hp.TextChanged += new System.EventHandler(this.txt_hp_TextChanged);
             // 
             // lbl_hpCharacter
             // 
@@ -2282,6 +2289,7 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(136, 20);
             this.txt_name.TabIndex = 1;
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
             // lbl_name
             // 
@@ -2319,6 +2327,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rpg System";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_mainScreen_FormClosing);
+            this.Load += new System.EventHandler(this.frm_mainScreen_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.tab_groups.ResumeLayout(false);
@@ -2580,18 +2589,18 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txt_base;
+        private System.Windows.Forms.Label lbl_lvl100;
+        private System.Windows.Forms.Label lbl_lvl50;
+        private System.Windows.Forms.Label lbl_lvl10;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbl_lvl1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt_level;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -2612,11 +2621,11 @@
         private System.Windows.Forms.ListBox list_itemsUsed;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_sp;
         private System.Windows.Forms.Label lbl_spCharacter;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_mp;
         private System.Windows.Forms.Label lbl_mpCharacter;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_hp;
         private System.Windows.Forms.Label lbl_hpCharacter;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_name;

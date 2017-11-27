@@ -28,9 +28,16 @@ namespace RpgSystem
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
-            Hide();
-            Form frm_main = new frm_mainScreen();
-            frm_main.Show();
+            if (UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)) != null)
+            {
+                Hide();
+                Form frm_main = new frm_mainScreen(UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)), UserLogged);
+                frm_main.Show();
+            }
+            else
+            {
+                MessageBox.Show("No projects selected!", "", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

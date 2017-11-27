@@ -16,5 +16,9 @@ namespace Entities
             Level = new Level();
             Inventory = new Inventory();
         }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
