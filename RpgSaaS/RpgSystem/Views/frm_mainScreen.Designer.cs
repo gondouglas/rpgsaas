@@ -144,7 +144,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btn_remove = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -337,19 +337,20 @@
             // mi_save
             // 
             this.mi_save.Name = "mi_save";
-            this.mi_save.Size = new System.Drawing.Size(98, 22);
+            this.mi_save.Size = new System.Drawing.Size(152, 22);
             this.mi_save.Text = "Save";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(95, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mi_exit
             // 
             this.mi_exit.Name = "mi_exit";
-            this.mi_exit.Size = new System.Drawing.Size(98, 22);
+            this.mi_exit.Size = new System.Drawing.Size(152, 22);
             this.mi_exit.Text = "Exit";
+            this.mi_exit.Click += new System.EventHandler(this.mi_exit_Click);
             // 
             // menu_edit
             // 
@@ -1463,7 +1464,7 @@
             // 
             // splitContainer9.Panel2
             // 
-            this.splitContainer9.Panel2.Controls.Add(this.button10);
+            this.splitContainer9.Panel2.Controls.Add(this.btn_remove);
             this.splitContainer9.Panel2.Controls.Add(this.button11);
             this.splitContainer9.Size = new System.Drawing.Size(151, 354);
             this.splitContainer9.SplitterDistance = 312;
@@ -1481,14 +1482,15 @@
             this.listBox1.Size = new System.Drawing.Size(151, 303);
             this.listBox1.TabIndex = 0;
             // 
-            // button10
+            // btn_remove
             // 
-            this.button10.Location = new System.Drawing.Point(3, 9);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(61, 23);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "Remove";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn_remove.Location = new System.Drawing.Point(3, 9);
+            this.btn_remove.Name = "btn_remove";
+            this.btn_remove.Size = new System.Drawing.Size(61, 23);
+            this.btn_remove.TabIndex = 0;
+            this.btn_remove.Text = "Remove";
+            this.btn_remove.UseVisualStyleBackColor = true;
+            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
             // button11
             // 
@@ -1534,6 +1536,7 @@
             // 
             // textBox18
             // 
+            this.textBox18.Enabled = false;
             this.textBox18.Location = new System.Drawing.Point(107, 19);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(39, 20);
@@ -1541,6 +1544,7 @@
             // 
             // button20
             // 
+            this.button20.Enabled = false;
             this.button20.Location = new System.Drawing.Point(152, 18);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(21, 21);
@@ -1550,6 +1554,7 @@
             // 
             // listBox2
             // 
+            this.listBox2.Enabled = false;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(6, 46);
             this.listBox2.Name = "listBox2";
@@ -1558,6 +1563,7 @@
             // 
             // button21
             // 
+            this.button21.Enabled = false;
             this.button21.Location = new System.Drawing.Point(179, 18);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(21, 21);
@@ -1567,6 +1573,7 @@
             // 
             // comboBox9
             // 
+            this.comboBox9.Enabled = false;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Location = new System.Drawing.Point(6, 18);
             this.comboBox9.Name = "comboBox9";
@@ -1589,6 +1596,7 @@
             // 
             // textBox19
             // 
+            this.textBox19.Enabled = false;
             this.textBox19.Location = new System.Drawing.Point(107, 20);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(39, 20);
@@ -1596,6 +1604,7 @@
             // 
             // button22
             // 
+            this.button22.Enabled = false;
             this.button22.Location = new System.Drawing.Point(152, 19);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(21, 21);
@@ -1605,6 +1614,7 @@
             // 
             // listBox3
             // 
+            this.listBox3.Enabled = false;
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(6, 46);
             this.listBox3.Name = "listBox3";
@@ -1613,6 +1623,7 @@
             // 
             // comboBox10
             // 
+            this.comboBox10.Enabled = false;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Location = new System.Drawing.Point(6, 19);
             this.comboBox10.Name = "comboBox10";
@@ -1621,6 +1632,7 @@
             // 
             // button23
             // 
+            this.button23.Enabled = false;
             this.button23.Location = new System.Drawing.Point(179, 19);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(21, 21);
@@ -1644,6 +1656,7 @@
             // 
             // textBox20
             // 
+            this.textBox20.Enabled = false;
             this.textBox20.Location = new System.Drawing.Point(107, 19);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(39, 20);
@@ -1651,6 +1664,7 @@
             // 
             // button24
             // 
+            this.button24.Enabled = false;
             this.button24.Location = new System.Drawing.Point(152, 19);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(21, 21);
@@ -1660,6 +1674,7 @@
             // 
             // button25
             // 
+            this.button25.Enabled = false;
             this.button25.Location = new System.Drawing.Point(179, 19);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(21, 21);
@@ -1669,6 +1684,7 @@
             // 
             // comboBox11
             // 
+            this.comboBox11.Enabled = false;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Location = new System.Drawing.Point(6, 18);
             this.comboBox11.Name = "comboBox11";
@@ -1677,6 +1693,7 @@
             // 
             // listBox4
             // 
+            this.listBox4.Enabled = false;
             this.listBox4.FormattingEnabled = true;
             this.listBox4.Location = new System.Drawing.Point(6, 45);
             this.listBox4.Name = "listBox4";
@@ -1913,7 +1930,7 @@
             this.txt_base.Location = new System.Drawing.Point(41, 47);
             this.txt_base.Name = "txt_base";
             this.txt_base.Size = new System.Drawing.Size(30, 20);
-            this.txt_base.TabIndex = 1;
+            this.txt_base.TabIndex = 6;
             this.txt_base.TextChanged += new System.EventHandler(this.txt_base_TextChanged);
             // 
             // lbl_lvl100
@@ -2024,7 +2041,7 @@
             this.txt_level.Location = new System.Drawing.Point(41, 21);
             this.txt_level.Name = "txt_level";
             this.txt_level.Size = new System.Drawing.Size(30, 20);
-            this.txt_level.TabIndex = 1;
+            this.txt_level.TabIndex = 5;
             this.txt_level.TextChanged += new System.EventHandler(this.txt_level_TextChanged);
             // 
             // label10
@@ -2069,6 +2086,7 @@
             // 
             // button8
             // 
+            this.button8.Enabled = false;
             this.button8.Location = new System.Drawing.Point(152, 18);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(21, 21);
@@ -2078,6 +2096,7 @@
             // 
             // list_weakness
             // 
+            this.list_weakness.Enabled = false;
             this.list_weakness.FormattingEnabled = true;
             this.list_weakness.Location = new System.Drawing.Point(6, 46);
             this.list_weakness.Name = "list_weakness";
@@ -2086,6 +2105,7 @@
             // 
             // button7
             // 
+            this.button7.Enabled = false;
             this.button7.Location = new System.Drawing.Point(179, 18);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(21, 21);
@@ -2107,6 +2127,7 @@
             // 
             // button6
             // 
+            this.button6.Enabled = false;
             this.button6.Location = new System.Drawing.Point(152, 19);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(21, 21);
@@ -2116,6 +2137,7 @@
             // 
             // list_resistances
             // 
+            this.list_resistances.Enabled = false;
             this.list_resistances.FormattingEnabled = true;
             this.list_resistances.Location = new System.Drawing.Point(6, 46);
             this.list_resistances.Name = "list_resistances";
@@ -2124,6 +2146,7 @@
             // 
             // button5
             // 
+            this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(179, 19);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(21, 21);
@@ -2145,6 +2168,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(152, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(21, 21);
@@ -2154,6 +2178,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(179, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(21, 21);
@@ -2163,6 +2188,7 @@
             // 
             // list_attributes
             // 
+            this.list_attributes.Enabled = false;
             this.list_attributes.FormattingEnabled = true;
             this.list_attributes.Location = new System.Drawing.Point(6, 45);
             this.list_attributes.Name = "list_attributes";
@@ -2183,6 +2209,7 @@
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(152, 19);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(21, 21);
@@ -2192,6 +2219,7 @@
             // 
             // list_itemsUsed
             // 
+            this.list_itemsUsed.Enabled = false;
             this.list_itemsUsed.FormattingEnabled = true;
             this.list_itemsUsed.Location = new System.Drawing.Point(6, 45);
             this.list_itemsUsed.Name = "list_itemsUsed";
@@ -2200,6 +2228,7 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(179, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(21, 21);
@@ -2228,7 +2257,7 @@
             this.txt_sp.Location = new System.Drawing.Point(159, 52);
             this.txt_sp.Name = "txt_sp";
             this.txt_sp.Size = new System.Drawing.Size(30, 20);
-            this.txt_sp.TabIndex = 1;
+            this.txt_sp.TabIndex = 4;
             this.txt_sp.TextChanged += new System.EventHandler(this.txt_sp_TextChanged);
             // 
             // lbl_spCharacter
@@ -2245,7 +2274,7 @@
             this.txt_mp.Location = new System.Drawing.Point(96, 52);
             this.txt_mp.Name = "txt_mp";
             this.txt_mp.Size = new System.Drawing.Size(30, 20);
-            this.txt_mp.TabIndex = 1;
+            this.txt_mp.TabIndex = 3;
             this.txt_mp.TextChanged += new System.EventHandler(this.txt_mp_TextChanged);
             // 
             // lbl_mpCharacter
@@ -2262,7 +2291,7 @@
             this.txt_hp.Location = new System.Drawing.Point(36, 52);
             this.txt_hp.Name = "txt_hp";
             this.txt_hp.Size = new System.Drawing.Size(30, 20);
-            this.txt_hp.TabIndex = 1;
+            this.txt_hp.TabIndex = 2;
             this.txt_hp.TextChanged += new System.EventHandler(this.txt_hp_TextChanged);
             // 
             // lbl_hpCharacter
@@ -2312,6 +2341,7 @@
             this.tab_control.SelectedIndex = 0;
             this.tab_control.Size = new System.Drawing.Size(609, 434);
             this.tab_control.TabIndex = 0;
+            this.tab_control.SelectedIndexChanged += new System.EventHandler(this.tab_control_SelectedIndexChanged);
             // 
             // frm_mainScreen
             // 
@@ -2560,7 +2590,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.SplitContainer splitContainer9;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_remove;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.PictureBox pictureBox3;

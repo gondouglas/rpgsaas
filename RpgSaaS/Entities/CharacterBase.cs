@@ -19,11 +19,14 @@ namespace Entities
         public List<ItemBase> ItemsUsed { get; set; }
         public List<Resistance> Resistances { get; set; }
 
+        public DateTime CreatedDate { get; set; }
+
         public CharacterBase()
         {
             Attributes = new List<AttributeBase>();
             ItemsUsed = new List<ItemBase>();
             Resistances = new List<Resistance>();
+            CreatedDate = DateTime.Now;
         }
 
     }

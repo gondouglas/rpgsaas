@@ -31,12 +31,12 @@ namespace RpgSystem
             if (UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)) != null)
             {
                 Hide();
-                Form frm_main = new frm_mainScreen(UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)), UserLogged);
+                Form frm_main = new frm_mainScreen(UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)), UserLogged, this);
                 frm_main.Show();
             }
             else
             {
-                MessageBox.Show("No projects selected!", "", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("No projects selected!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -47,7 +47,7 @@ namespace RpgSystem
                 lbl_title.Text = list_projects.Text;
                 lbl_description.Text = UserLogged.Projects.Find(x => x.Name.Equals(list_projects.Text)).Description;
             }
-            catch (NullReferenceException exc)
+            catch (NullReferenceException)
             {
 
             }
